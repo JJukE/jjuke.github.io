@@ -11,7 +11,7 @@
 
   <!-- Facebook and Twitter integration -->
 	<meta property="og:title" content="{{ site.title }}"/>
-	<meta property="og:image" content="{{ site.url }}/images/cover_bg_2.jpeg"/>
+	<meta property="og:image" content="{{ site.url }}/images/cover_bg_1.JPG"/>
 	<meta property="og:url" content="{{ site.url }}"/>
 	<meta property="og:site_name" content=""/>
 	<meta property="og:description" content="{{ site.description }}"/>
@@ -87,10 +87,10 @@
 			<div class="colorlib-footer">
 				<ul>
                     <li><a href="mailto:{{site.email_address}}">Mail<i class="icon-mail5"></i></a></li>
-					<li><a href=site.linkedin_url>LinkedIn<i class="icon-linkedin2"></i></a></li>
-                    <li><a href=site.github_url>Github<i class="icon-github"></i></a></li>
-					<li><a href=site.instagram_url>Instagram<i class="icon-instagram"></i></a></li>
-                    <li><a href=site.blog_url>Blog<i class="icon-paper"></i></a></li>
+					<li><a href="{{site.linkedin_url}}">LinkedIn<i class="icon-linkedin2"></i></a></li>
+                    <li><a href="{{site.github_url}}">Github<i class="icon-github"></i></a></li>
+					<li><a href="{{site.instagram_url}}">Instagram<i class="icon-instagram"></i></a></li>
+                    <li><a href="{{site.blog_url}}">Blog<i class="icon-paper"></i></a></li>
 				</ul>
 			</div>
 
@@ -107,7 +107,7 @@
 								<div class="col-md-12">
 									<div class="about-desc">
 										<span class="heading-meta">{{ site.about_meta }}</span>
-										<p style="font-family: Times New Roman; font-size: 18px;">{{ site.about_content }}</p>
+										<p style="font-family: Times New Roman; font-size: 20px;">{{ site.about_content }}</p>
 									</div>
 								</div>
 							</div>
@@ -139,14 +139,36 @@
 									</div>
 								</div>
 							</div> -->
-							<div class="row">
-								<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-									<div class="hire">
-										<h3 style="font-family: Menlo, monospace !important; color:{{site.about_box_content_color}}; font-size: 18px;">{{ site.about_box_content }}</h3>
-										<a href="{{ site.about_box_button.link | default: '#' }}" onclick="return false;" class="btn-hire">{{ site.about_box_button.name }}</a>
-									</div>
-								</div>
-							</div>
+                            <div class="row">
+                                <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+                                    <div style="background: linear-gradient(135deg, #ffffff 0%, #f5f7fa 100%); 
+                                                padding: 40px; 
+                                                border-radius: 20px; 
+                                                box-shadow: 0 10px 30px rgba(0,0,0,0.05), inset 0 0 0 1px rgba(127, 23, 43, 0.1); 
+                                                position: relative; 
+                                                overflow: hidden;">
+                                        
+                                        <div style="position: absolute; top: -20px; right: -20px; width: 100px; height: 100px; background: rgba(127, 23, 43, 0.05); border-radius: 50%;"></div>
+                            
+                                        <div style="display: flex; align-items: center; justify-content: space-between; position: relative; z-index: 1;">
+                                            <div style="flex: 1;">
+                                                <h3 style="font-family: 'Menlo', monospace !important; color: #333; font-size: 19px; line-height: 1.4; margin: 0;">
+                                                    {{ site.about_box_content }}
+                                                </h3>
+                                            </div>
+                                            
+                                            <div style="margin-left: 40px;">
+                                                <a href="{{ site.about_box_button.link | default: '#' }}" target="_blank" 
+                                                   style="background: #7F172B; color: #fff; padding: 15px 35px; border-radius: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; transition: all 0.3s ease; box-shadow: 0 8px 15px rgba(127, 23, 43, 0.2); display: inline-block; text-decoration: none;"
+                                                   onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 12px 20px rgba(127, 23, 43, 0.3)';" 
+                                                   onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 15px rgba(127, 23, 43, 0.2)';">
+                                                    {{ site.about_box_button.name }}
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 						</div>
 					</div>
 				</div>
@@ -291,7 +313,7 @@
 				</div>
 			</section>
             
-            <div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/cover_bg_5.jpeg);" data-stellar-background-ratio="0.5">
+            <div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/cover_bg_1.JPG);" data-stellar-background-ratio="0.5">
                 <div class="overlay"></div>
                 <div class="colorlib-narrow-content"> 
                     <h2 class="colorlib-heading animate-box" style="color: #ffffff; margin-bottom: 30px; position: relative; z-index: 1;">

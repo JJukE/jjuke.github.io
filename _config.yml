@@ -1,5 +1,5 @@
 # TODOs: add linkedin
-title: JJukE's Portfolio
+title: JJukE's Webpage
 name: Sangjune Park
 email: psj9116@unist.ac.kr
 description: >-
@@ -55,7 +55,7 @@ about_box_content: Please refer to my CV for more details 😁
 about_box_content_color: rgb(255, 255, 255)
 
 about_box_button:
-  link: pdf/cv.pdf
+  link: pdf/cv_260319.pdf
   name: CV
 
 
@@ -143,7 +143,7 @@ pub_3dvision: # 형식에 맞추어 항목 추가
 
 
 # Honors
-hon_meta: What have I achieved?
+hon_meta: Achievement
 hon_header: HONOR
 hon_services: # 형식에 맞추어 항목 추가
 # - name: 매니지먼트
@@ -219,7 +219,7 @@ career_list:
   animation: fadeInLeft
 - name: Seoul National University of Science and Technology
   date: 2015.03~2022.08
-  content: Achieved Bachelor's Degree in both Mecahnical Design and Automation Engineering and ICT Artificial Intelligence
+  content: Achieved Bachelor's Degree in both Mechanical Design and Automation Engineering and ICT Artificial Intelligence Program
   color: color-1
   icon: icon-pen
   animation: fadeInLeft
