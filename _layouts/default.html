@@ -80,6 +80,7 @@
 						<li><a href="#" data-nav-section="work">Publication</a></li>
 						<li><a href="#" data-nav-section="services">Honor</a></li>
 						<li><a href="#" data-nav-section="experience">Career</a></li>
+						<li><a href="#" data-nav-section="service">Service</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -372,7 +373,39 @@
 				   </div>
 				</div>
 			</section>
-            
+
+			<!-- Service -->
+			<section class="colorlib-service" data-section="service">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">{{ site.service_meta }}</span>
+							<h2 class="colorlib-heading animate-box">{{ site.service_header }}</h2>
+						</div>
+					</div>
+
+					<div class="row">
+						{% for category in site.service_categories %}
+							<div class="col-md-12 animate-box" data-animate-effect="{{ category.animation | default: 'fadeInLeft' }}">
+								<div style="background: #fff; border-left: 4px solid var(--{{ category.color | default: 'color-1' }}); border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 6px 20px rgba(0,0,0,0.05);">
+									<h3 style="display: flex; align-items: center; margin: 0 0 16px 0; font-family: 'Quicksand', sans-serif; font-weight: 700; font-size: 18px; color: #333; text-transform: uppercase; letter-spacing: 1px;">
+										<i class="{{ category.icon }}" style="margin-right: 12px; color: var(--{{ category.color | default: 'color-1' }}); font-size: 22px;"></i>
+										{{ category.title }}
+									</h3>
+									<ul style="list-style: none; padding: 0; margin: 0;">
+										{% for item in category.items %}
+											<li style="padding: 10px 0; border-top: 1px solid #f0f0f0; font-family: 'Times New Roman', serif; font-size: 17px; color: #555;">
+												{{ item }}
+											</li>
+										{% endfor %}
+									</ul>
+								</div>
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+			</section>
+
             <!-- blank -->
             <div style="height: 400px; width: 100%; clear: both;"></div>
 

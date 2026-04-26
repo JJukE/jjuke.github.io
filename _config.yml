@@ -225,6 +225,18 @@ career_list:
   animation: fadeInLeft
 
 
+# Service
+service_meta: contribution
+service_header: SERVICE
+service_categories:
+- title: Conference Reviewer
+  color: color-4
+  icon: icon-pen2
+  animation: fadeInLeft
+  items:
+  - ECCV 2026
+
+
 # # Education
 # edu_meta: Education
 # edu_header: Education
