@@ -55,7 +55,7 @@ about_box_content: Please refer to my CV for more details 😁
 about_box_content_color: rgb(255, 255, 255)
 
 about_box_button:
-  link: pdf/cv_260323.pdf
+  link: pdf/cv_260427.pdf
   name: CV
 
 
@@ -112,11 +112,8 @@ about_box_button:
 # PUBLICATIONS
 pub_meta: My Work
 pub_header: PUBLICATION
-pub_load_more: 앞으로 더 많은 프로젝트가 추가될 예정입니다:)    # 더보기 내용
-pub_load_more_url: #
 
-pub_3dvision_name: 3D Vision
-pub_3dvision: # 형식에 맞추어 항목 추가
+pub: # 형식에 맞추어 항목 추가
 - background_url: pub_materials/1_NotLikeTransformers.gif
   animation: fadeInLeft
   name: "Not Like Transformers: Drop the Beat Representation for Dance Generation with Mamba-Based Diffusion Model"
@@ -129,17 +126,6 @@ pub_3dvision: # 형식에 맞추어 항목 추가
 #   project_page_url: https://vision3d-lab.github.io/mambadance/
 #   paper_url: 
 #   arxiv_url: https://arxiv.org/abs/2603.08023
-
-
-# # Robotics 논문도 낸다면..?
-# pub_robotics_name: Robotics
-# pub_robotics: # 형식에 맞추어 항목 추가
-# - background_url: images/lab_project2.jpg
-#   animation: fadeInRight
-#   name: 스마트팩토리용 실감형 AR 인터렉티브 콘텐츠 플랫폼 개발(ing)
-#   description: 메타버스 시대에 발맞춰 Capstone Design에서 VR Interactive Platform을 개발하였던 것과 연동하여 스마트팩토리를 위한 플랫폼을 개발한다.
-#   detail_url: #
-#   readmore_url: #
 
 
 # Honors
